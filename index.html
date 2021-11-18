@@ -70,6 +70,49 @@
                   <use href="./Images/sprite.svg#close-icon"></use>
                 </svg>
               </button>
+              <form class="modal-form">
+                <h4>Оставьте свои данные, мы вам перезвоним</h4>
+
+                <div class="fill-form">
+                  <div class="form-field">
+                    <input type="text" name="name-recall" id="name-recall">
+                    <label for="name-recall">Имя</label>
+                    <svg class="fill-form-icon" width="18px" height="18px">
+                      <use href="./Images/sprite.svg#person-form"></use>
+                    </svg>
+                  </div>
+                  
+                  <div class="form-field">
+                    <input type="tel" name="tel-recall" id="tel-recall">
+                    <label for="tel-recall">Телефон</label>
+                    <svg class="fill-form-icon" width="18px" height="18px">
+                      <use href="./Images/sprite.svg#phone-form"></use>
+                    </svg>
+                  </div>
+                  
+                  <div class="form-field">
+                    <input type="email" name="mail-recall" id="mail-recall">
+                    <label for="mail-recall">Почта</label>
+                    <svg class="fill-form-icon" width="18px" height="18px">
+                      <use href="./Images/sprite.svg#email-form"></use>
+                    </svg>
+                  </div>
+                  
+                  <div class="form-field">
+                    <textarea name="comment-recall" id="comment-recall" 
+                      placeholder="Введите текст" cols="30" rows="10"></textarea>
+                    <label for="comment-recall">Комментарий</label>
+                  </div>
+                </div>
+
+                <div class="form-field policy">
+                  <input type="checkbox" name="policy-recall" id="policy-recall">
+                  <label for="policy-recall">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+                </div>
+
+                <button type="submit">Отправить</button>
+              </form>
+
             </div>
           </div>
       </section>
@@ -399,19 +442,22 @@
             </li>
           </ul>
         </div>
-        <form class="subscribe">
+        <div class="subscribe">
           <h4>Подпишитесь на рассылку</h4>
 
-          <input type="email" name="mail" id="mail" placeholder="E-mail">
-          <label for="mail"></label>
-
-          <button type="submit">Подписаться
-            <svg class="icon-send" width="24px" height="24px">
-              <use href="./Images/sprite.svg#icon-send"></use>
-            </svg>
-          </button>
-
-        </form>
+          <form class="subscribe-form">
+            <div class="subscribe-mail">
+              <input type="email" name="mail" id="mail" placeholder="E-mail">
+              <label for="mail"></label>
+            </div>
+            
+            <button type="submit">Подписаться
+              <svg class="icon-send" width="24px" height="24px">
+                <use href="./Images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
